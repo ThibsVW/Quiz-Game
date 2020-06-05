@@ -51,7 +51,7 @@ let questions = [
 // create some variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let count = 5;
+let count = 10;
 const questionTime = 10; // 10s
 let TIMER;
 let score = 0;
