@@ -7,6 +7,9 @@ const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const counter = document.getElementById("counter");
 const scoreDiv = document.getElementById("scoreContainer");
+const yourName = document.getElementById(".details");
+const highsSores= [];
+
 // create our questions
 let questions = [
     {
@@ -48,10 +51,23 @@ let questions = [
 // create some variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let count = 0;
+let count = 5;
 const questionTime = 10; // 10s
 let TIMER;
 let score = 0;
+
+// timer
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='GAME OVER';
+    // or...
+    alert("You're out of time!");
+  }
+}, 1000);
+
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
@@ -78,6 +94,7 @@ function renderProgress(){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
     }
 }
+
 // counter render
 function renderCounter(){
     if(count <= questionTime){
@@ -97,7 +114,8 @@ function renderCounter(){
         }
     }
 }
-// checkAnwer
+
+// checkAnswer
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
@@ -136,3 +154,5 @@ function scoreRender(){
     
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
+
+
