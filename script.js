@@ -2,13 +2,15 @@
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
+const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const counter = document.getElementById("counter");
+const timeGauge = document.getElementById("timeGauge");
+const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
-const yourName = document.getElementById(".details");
-const highsSores= [];
+const userDetails = document.getElementById("user-details");
 
 // create our questions
 let questions = [
@@ -49,36 +51,27 @@ let questions = [
 
 ];
 // create some variables
+
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let count = 10;
+let count = 0;
 const questionTime = 10; // 10s
+const gaugeWidth = 150; // 150px
+const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
-
-// timer
-var interval = setInterval(function(){
-  document.getElementById('count').innerHTML=count;
-  count--;
-  if (count === 0){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='GAME OVER';
-    // or...
-    alert("You're out of time!");
-  }
-}, 1000);
 
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
-    
     question.innerHTML = "<p>"+ q.question +"</p>";
-    
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
 }
+
 start.addEventListener("click",startQuiz);
+
 // start quiz
 function startQuiz(){
     start.style.display = "none";
@@ -88,6 +81,7 @@ function startQuiz(){
     renderCounter();
     TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
+
 // render progress
 function renderProgress(){
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
@@ -96,9 +90,11 @@ function renderProgress(){
 }
 
 // counter render
+
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit + "px";
         count++
     }else{
         count = 0;
@@ -115,7 +111,8 @@ function renderCounter(){
     }
 }
 
-// checkAnswer
+// checkAnwer
+
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
@@ -137,14 +134,17 @@ function checkAnswer(answer){
         scoreRender();
     }
 }
+
 // answer is correct
 function answerIsCorrect(){
-    confirm("That's Correct");
+    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
 }
+
 // answer is Wrong
 function answerIsWrong(){
-    confirm("Sorry, that's incorrect");
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
+
 // score render
 function scoreRender(){
     scoreDiv.style.display = "block";
@@ -154,5 +154,3 @@ function scoreRender(){
     
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
-
-

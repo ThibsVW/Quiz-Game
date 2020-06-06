@@ -4,7 +4,7 @@
 
 * Build a Quiz with HTML, CSS, and JavaScript to improve your Core Web Development without the assistance of libraries or frameworks.
 
-##  Here are some of the topic we will cover!
+##  Topics we need to master!
 
 * Save high scores in Local Storage
 * Dynamically generate HTML in JavaScript
@@ -26,7 +26,7 @@
 9. Test the game and open keep using your console to prevent any error
 10. Share your game on GitHub!
 
-## Link to the game calles " Thibz Quiz"
+## Link to the game called " Thibz Quiz"
 
 https://thibsvw.github.io/Quiz-Game/ 
 
@@ -38,7 +38,8 @@ https://thibsvw.github.io/Quiz-Game/
 
 2. Questions with 10seconds timer for each question
 
-![questions](https://user-images.githubusercontent.com/64518932/83929769-2a67d600-a7c7-11ea-84d5-6e249bd3e020.JPG)
+![questions](https://user-images.githubusercontent.com/64518932/83930323-8b90a900-a7c9-11ea-9ff9-0e0e5ac20741.JPG)
+
 
 3. Final results displayed 
 
