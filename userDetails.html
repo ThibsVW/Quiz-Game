@@ -8,13 +8,15 @@
 
 </head>
 <body>
+
+  <!-- Highscore page where the user can register name and score to localStorage-->
   <div id="button"><a href="index.html" style="color: azure; border: 1px solid; text-decoration: none; background-color: chartreuse ; color :black;">Back to Home Page</a></div>
     <div class="todos">
         <form id="todo-form" method="POST">
-          <label for="todo-text">Add a User name and Score : </label>
-          <input type="text" placeholder="Please enter your name and score" name="todo-text" id="todo-text" />
+          <label for="todo-text">Add your user name and score then press ENTER </label>
+          <input type="text" placeholder="Add your user name and score then press ENTER" name="todo-text" id="todo-text" />
         </form>
-        <p>User scores :  <span id="todo-count">0</span></p>
+        <p>Number of users :  <span id="todo-count">0</span></p>
         <ul id="todo-list"></ul>
       </div>
     <script src="userDetails.js"></script>

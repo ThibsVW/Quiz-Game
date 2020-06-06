@@ -8,18 +8,27 @@
 
 </head>
 <body>
-    
+    <!-- container for the quiz-->
+
     <div id="container">
-        <div id="button"><a href="userDetails.html" style="color: azure; border: 1px solid; text-decoration: none; background-color: chartreuse ; color :black;">HighScores</a></div>
-        <div id="start">Start Quiz!</div>
+        <div id="button"><a href="userDetails.html" >Click ME to see HighScores</a></div>
+        <div id="start">Start Thibz Quiz!</div>
+
+    <!-- Quiz will start and hide the quiz button-->
+
         <div id="quiz" style="display: none">
+
+    <!-- questions-->
             <div id="question"></div>
-            <div id="qImg"></div>
+
+    <!-- multiple choices-->
             <div id="choices">
                 <div class="choice" id="A" onclick="checkAnswer('A')"></div>
                 <div class="choice" id="B" onclick="checkAnswer('B')"></div>
                 <div class="choice" id="C" onclick="checkAnswer('C')"></div>
             </div>
+            
+    <!--timer-->
             <div id="timer">
                 <div id="counter"></div>
                 <div id="btimeGauge"></div>
@@ -27,7 +36,9 @@
             </div>
             <div id="progress"></div>
         </div>
-        <div id="scoreContainer" style="display: none"></div>
+
+    <!--Score container and link to register highscores-->
+        <div id="scoreContainer" style="display: none"><Span id="button2"><a href="userDetails.html" >Click ME to register your name and score</a></Span></div>
     </div>
     <script src="script.js"></script>
 </body>

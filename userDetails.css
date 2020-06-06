@@ -6,7 +6,9 @@
 
 body {
   font-family: "Concert One", cursive;
-  font-size: 16px;
+  font-size: 2rem;
+  background-image : url("./Assets/quiz.jpg");
+  color: white;
 }
 
 input {
@@ -14,7 +16,7 @@ input {
   width: 100%;
   padding: 6px;
   margin-top: 10px;
-  font-size: 2.4em;
+  font-size: 1rem;
   border: none;
 }
 
@@ -28,10 +30,11 @@ li {
   height: 50px;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 5rem;
   padding: 5px;
-  background-color: #ff5d88;
+  background-color: #c5aa0e;
   color: white;
-  font-size: 1.5em;
+  font-size: 10rem;
   line-height: 1.5;
 }
 
@@ -51,7 +54,7 @@ li button {
   border: none;
   height: 40px;
   cursor: pointer;
-  background-color: #ff9500;
+  background-color: #0b5f97;
   color: white;
   font-size: 1em;
 }
@@ -61,7 +64,7 @@ li button:hover {
 }
 
 .todos {
-  width: 800px;
+  width: 50%;
   margin: 0 auto;
   margin-top: 40px;
 }
