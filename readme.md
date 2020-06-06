@@ -34,7 +34,7 @@ https://thibsvw.github.io/Quiz-Game/
 
 1. Start the Quiz
 
-![start](https://user-images.githubusercontent.com/64518932/83929751-12905200-a7c7-11ea-827c-1f96626c5389.JPG)
+![start](https://user-images.githubusercontent.com/64518932/83931899-ce567f00-a7d1-11ea-819d-edd53a2e37b9.JPG)
 
 2. Questions with 10seconds timer for each question
 
@@ -44,6 +44,11 @@ https://thibsvw.github.io/Quiz-Game/
 3. Final results displayed 
 
 ![score](https://user-images.githubusercontent.com/64518932/83929795-3ce20f80-a7c7-11ea-923b-3a9a73cdc79b.JPG)
+
+4. HighScores
+
+![highscores](https://user-images.githubusercontent.com/64518932/83931951-25f4ea80-a7d2-11ea-88eb-51059984dc65.JPG)
+
 
 
 
