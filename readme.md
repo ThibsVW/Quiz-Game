@@ -32,7 +32,7 @@ https://thibsvw.github.io/Quiz-Game/
 
 ## Pictures 
 
-1. Start the Quiz
+1. Start the Quiz (Thibz Quiz)
 
 ![start](https://user-images.githubusercontent.com/64518932/83939044-35912500-a80c-11ea-9f23-076adc7db289.JPG)
 
