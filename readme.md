@@ -24,7 +24,7 @@
 7. Set your timer 
 8. Set your highscores in localStorage
 9. Test the game and open keep using your console to prevent any error
-10. Share your game on GitHub!
+10. Run your HTML and Javascript on validator website such as https://validator.w3.org/ 
 
 ## Link to the game called " Thibz Quiz"
 
@@ -34,7 +34,8 @@ https://thibsvw.github.io/Quiz-Game/
 
 1. Start the Quiz
 
-![start](https://user-images.githubusercontent.com/64518932/83931899-ce567f00-a7d1-11ea-819d-edd53a2e37b9.JPG)
+![start](https://user-images.githubusercontent.com/64518932/83939044-35912500-a80c-11ea-9f23-076adc7db289.JPG)
+
 
 2. Questions with 10seconds timer for each question
 
